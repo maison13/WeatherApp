@@ -6,18 +6,18 @@
 //
 import Foundation
 
-struct Wheather: Codable {
+struct Wheather: Decodable {
     let current_weather: CurentWheather
     let hourly: Hourly
 }
 
-struct CurentWheather: Codable {
+struct CurentWheather: Decodable {
     let time: String
     let temperature: Double
     let windspeed: Double
 }
 
-struct Hourly: Codable {
+struct Hourly: Decodable {
     let time: [String]
     let windspeed_10m: [Double]
     let temperature_2m: [Double]
