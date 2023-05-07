@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WheatherTableViewController: UITableViewController {
+final class WheatherTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
