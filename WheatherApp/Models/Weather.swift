@@ -6,7 +6,7 @@
 //
 import Foundation
 
-struct Wheather: Decodable {
+struct Weather: Decodable {
     let current_weather: CurentWheather
     let hourly: Hourly
 }

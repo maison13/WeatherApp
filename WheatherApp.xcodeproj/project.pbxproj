@@ -12,8 +12,10 @@
 		87B649B52A083B8700419B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B649B32A083B8700419B87 /* Main.storyboard */; };
 		87B649B72A083B8800419B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B649B62A083B8800419B87 /* Assets.xcassets */; };
 		87B649BA2A083B8800419B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B649B82A083B8800419B87 /* LaunchScreen.storyboard */; };
-		87B649C72A083BDE00419B87 /* WheatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B649C62A083BDE00419B87 /* WheatherTableViewController.swift */; };
-		87B649C92A083C4000419B87 /* Wheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B649C82A083C4000419B87 /* Wheather.swift */; };
+		87B649C72A083BDE00419B87 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B649C62A083BDE00419B87 /* WeatherTableViewController.swift */; };
+		87B649C92A083C4000419B87 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B649C82A083C4000419B87 /* Weather.swift */; };
+		87B649CC2A0BC53900419B87 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B649CB2A0BC53900419B87 /* NetworkManager.swift */; };
+		87B649CE2A0C139F00419B87 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B649CD2A0C139F00419B87 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,10 @@
 		87B649B62A083B8800419B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B649B92A083B8800419B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87B649BB2A083B8800419B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87B649C62A083BDE00419B87 /* WheatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherTableViewController.swift; sourceTree = "<group>"; };
-		87B649C82A083C4000419B87 /* Wheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheather.swift; sourceTree = "<group>"; };
+		87B649C62A083BDE00419B87 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
+		87B649C82A083C4000419B87 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		87B649CB2A0BC53900419B87 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		87B649CD2A0C139F00419B87 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,8 @@
 		87B649C22A083BA600419B87 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				87B649C62A083BDE00419B87 /* WheatherTableViewController.swift */,
+				87B649CD2A0C139F00419B87 /* MainViewController.swift */,
+				87B649C62A083BDE00419B87 /* WeatherTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -98,7 +103,7 @@
 		87B649C42A083BB700419B87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				87B649C82A083C4000419B87 /* Wheather.swift */,
+				87B649C82A083C4000419B87 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 		87B649C52A083BBC00419B87 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				87B649CB2A0BC53900419B87 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -181,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B649CE2A0C139F00419B87 /* MainViewController.swift in Sources */,
 				87B649AE2A083B8700419B87 /* AppDelegate.swift in Sources */,
-				87B649C92A083C4000419B87 /* Wheather.swift in Sources */,
-				87B649C72A083BDE00419B87 /* WheatherTableViewController.swift in Sources */,
+				87B649C92A083C4000419B87 /* Weather.swift in Sources */,
+				87B649CC2A0BC53900419B87 /* NetworkManager.swift in Sources */,
+				87B649C72A083BDE00419B87 /* WeatherTableViewController.swift in Sources */,
 				87B649B02A083B8700419B87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
