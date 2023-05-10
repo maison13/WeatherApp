@@ -7,11 +7,11 @@
 import Foundation
 
 struct Weather: Decodable {
-    let current_weather: CurentWheather
+    let current_weather: CurentWeather
     let hourly: Hourly
 }
 
-struct CurentWheather: Decodable {
+struct CurentWeather: Decodable {
     let time: String
     let temperature: Double
     let windspeed: Double
