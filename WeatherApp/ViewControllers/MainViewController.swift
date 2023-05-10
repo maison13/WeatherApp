@@ -12,17 +12,12 @@ final class MainViewController: UIViewController {
     @IBOutlet weak var curentWeatherLabel: UILabel!
     
     private let networkManager = NetworkManager.shared
-    
     private var weatherData: Weather!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchWeatherData()
-        
-        
-        /*
-       
-        */
+
     }
     
     
@@ -47,11 +42,8 @@ final class MainViewController: UIViewController {
     }
 
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let weatherTableVC = segue.destination as? WeatherTableViewController else { return }
         weatherTableVC.weatherData = weatherData
     }
-    
-
 }
