@@ -24,9 +24,9 @@ final class WeatherTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        weatherData?.hourly.temperature_2m.count ?? 0
+        0
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    /*override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "weather", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let temperature = weatherData.hourly.temperature_2m[indexPath.row]
@@ -35,7 +35,7 @@ final class WeatherTableViewController: UITableViewController {
         content.secondaryText = "Температура \(String(temperature))"
         cell.contentConfiguration = content
         return cell
-    }
+    }*/
     
    
 
